@@ -1,138 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Use — Smart Money Tracker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="Terms of Use for Smart Money Tracker.">
+  <title>Terms of Use | Smart Money Tracker</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.6;
-      color: #111827;
-      background: #ffffff;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      font-size: 22px;
-      margin-top: 32px;
-      color: #111827;
-    }
-
-    p, li {
-      font-size: 16px;
-      color: #374151;
-    }
-
-    .updated {
-      color: #6b7280;
-      margin-bottom: 32px;
-    }
-  </style>
+:root{
+  --bg:#070b14;
+  --panel:#0e1422;
+  --panel-2:#11192b;
+  --text:#f4f7fb;
+  --muted:#9aa7bd;
+  --line:#202a3d;
+  --accent:#7c5cff;
+  --accent-2:#3dd6c6;
+  --gold:#f4c15d;
+  --link:#9e8cff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(124,92,255,.14), transparent 28rem),
+    radial-gradient(circle at top left, rgba(61,214,198,.08), transparent 24rem),
+    var(--bg);
+  color:var(--text);
+  line-height:1.65;
+}
+.wrapper{max-width:900px;margin:0 auto;padding:32px 20px 64px}
+.header{
+  margin-bottom:24px;
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:linear-gradient(180deg,rgba(17,25,43,.96),rgba(14,20,34,.96));
+  box-shadow:0 18px 60px rgba(0,0,0,.28);
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#c7bfff;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+}
+.brand-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  box-shadow:0 0 18px rgba(124,92,255,.7);
+}
+h1{font-size:clamp(34px,7vw,54px);line-height:1.08;margin:14px 0 8px;letter-spacing:-.03em}
+.updated{color:var(--muted);font-size:14px}
+.card{
+  padding:26px 28px;
+  margin-top:18px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:rgba(14,20,34,.92);
+}
+h2{font-size:22px;margin:0 0 12px;letter-spacing:-.01em}
+p{margin:10px 0;color:#d9e0ec}
+ul{margin:10px 0 0 20px;padding:0}
+li{margin:7px 0;color:#d9e0ec}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+.note{
+  margin-top:22px;
+  padding:18px 20px;
+  border-radius:16px;
+  border:1px solid rgba(124,92,255,.35);
+  background:linear-gradient(135deg,rgba(124,92,255,.12),rgba(61,214,198,.06));
+  color:#dfe4ef;
+}
+.footer{
+  margin-top:30px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:14px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 18px;
+  justify-content:space-between;
+}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+strong{color:#fff}
+@media(max-width:640px){
+  .wrapper{padding:18px 14px 40px}
+  .header,.card{padding:20px}
+  h2{font-size:20px}
+}
+</style>
 </head>
 <body>
-  <h1>Terms of Use</h1>
-  <p class="updated"><strong>Last updated:</strong> September 9, 2026</p>
+  <main class="wrapper">
+    <header class="header">
+      <div class="brand"><span class="brand-dot"></span> Smart Money Tracker</div>
+      <h1>Terms of Use</h1>
+      <div class="updated">Last updated: September 18, 2026</div>
+      <div class="note">These Terms govern your use of Smart Money Tracker. By downloading, accessing, or using the App, you agree to these Terms.</div>
+    </header>
 
-  <p>
-    These Terms of Use govern your use of Smart Money Tracker.
-    By using the app, you agree to these Terms.
-  </p>
+    <section class="card"><h2>1. Purpose of the App</h2>
+<p>Smart Money Tracker provides cryptocurrency market intelligence and research tools, including market data, token information, whale activity, market signals, market sentiment, risk indicators, AI-generated analysis, and watchlist functionality.</p>
+<p>The App is intended to help users research publicly available cryptocurrency market information.</p>
+</section>
+<section class="card"><h2>2. Not Financial Advice</h2>
+<p>Smart Money Tracker does not provide financial, investment, trading, legal, accounting, or tax advice.</p>
+<p>All information displayed by the App, including AI-generated analysis, Smart Money Index data, whale activity, token signals, risk indicators, market sentiment, Gems, and other market information, is provided for informational and research purposes only.</p>
+<p>Nothing in Smart Money Tracker constitutes:</p>
+<ul>
+<li>a recommendation to buy or sell an asset;</li>
+<li>an investment recommendation;</li>
+<li>an offer or solicitation;</li>
+<li>personalized financial advice;</li>
+<li>a guarantee of future performance.</li>
+</ul>
+<p>You are solely responsible for your own financial and investment decisions.</p>
+</section>
+<section class="card"><h2>3. Cryptocurrency Risk</h2>
+<p>Cryptocurrency and digital assets involve substantial risk.</p>
+<p>Prices may change rapidly and users may lose some or all of the value associated with a cryptocurrency investment.</p>
+<p>Past performance, market activity, whale transactions, AI analysis, token momentum, or other signals do not guarantee future results.</p>
+<p>Smart Money Tracker does not guarantee profits or protection from losses.</p>
+</section>
+<section class="card"><h2>4. No Trading, Brokerage, Wallet, or Custody Services</h2>
+<p>Smart Money Tracker is a market research and analytics application.</p>
+<p>The App does not:</p>
+<ul>
+<li>execute cryptocurrency trades;</li>
+<li>buy or sell cryptocurrency on your behalf;</li>
+<li>provide brokerage services;</li>
+<li>operate a cryptocurrency exchange;</li>
+<li>hold or custody cryptocurrency;</li>
+<li>provide a cryptocurrency wallet;</li>
+<li>request wallet seed phrases or private keys;</li>
+<li>request exchange login credentials.</li>
+</ul>
+<p>Any financial decision or transaction you choose to make outside Smart Money Tracker is your own responsibility.</p>
+</section>
+<section class="card"><h2>5. Market Data</h2>
+<p>Smart Money Tracker uses public blockchain information and third-party market data providers.</p>
+<p>Market information may include prices, liquidity, volume, blockchain transactions, contract information, token metrics, and other market-related data.</p>
+<p>Market data may be delayed, incomplete, unavailable, inaccurate, or inconsistent between providers.</p>
+<p>Prices shown by different data providers or charts may differ. Smart Money Tracker does not guarantee the accuracy, completeness, availability, or timeliness of market information.</p>
+</section>
+<section class="card"><h2>6. Whale Activity and Market Signals</h2>
+<p>Large wallet movements, whale transactions, market activity indicators, Smart Money Index values, Gems, sentiment information, and similar features are analytical signals only.</p>
+<p>A wallet transfer does not necessarily represent a purchase or sale.</p>
+<p>Market signals should not be interpreted as guarantees or recommendations.</p>
+</section>
+<section class="card"><h2>7. AI-Generated Analysis</h2>
+<p>Certain Smart Money Tracker features may use artificial intelligence to analyze market information.</p>
+<p>AI-generated content may contain errors, misunderstand market conditions, omit relevant information, rely on incomplete or delayed data, or produce unexpected or inaccurate conclusions.</p>
+<p>AI analysis is provided for informational purposes only and must not be treated as financial advice or as a guarantee of any outcome.</p>
+</section>
+<section class="card"><h2>8. PRO Subscription</h2>
+<p>Smart Money Tracker may offer optional premium features through an auto-renewable PRO subscription.</p>
+<p>The available subscription period, current price, and included features will be displayed in the App and through the Apple App Store before purchase.</p>
+<p>Purchases are processed through Apple In-App Purchase. Payment is charged to the Apple ID associated with your App Store account.</p>
+<p>Subscriptions renew automatically according to the subscription terms presented by Apple unless canceled through your Apple subscription settings.</p>
+<p>Subscription management, billing, cancellations, renewals, and applicable refunds are handled through Apple according to Apple’s policies. We do not directly process your payment card.</p>
+</section>
+<section class="card"><h2>9. Restore Purchases</h2>
+<p>Users who previously purchased an eligible Smart Money Tracker subscription through the Apple App Store may use the Restore Purchases function where available.</p>
+<p>Restoration depends on the Apple ID, App Store purchase history, subscription status, and Apple’s systems.</p>
+</section>
+<section class="card"><h2>10. Changes to PRO Features</h2>
+<p>Features included with Smart Money Tracker PRO may evolve over time as the App is updated.</p>
+<p>We may add, modify, improve, or discontinue individual features, provided that applicable consumer rights and Apple subscription requirements are respected.</p>
+</section>
+<section class="card"><h2>11. Third-Party Services</h2>
+<p>Smart Money Tracker may rely on third-party services for cryptocurrency market information, public blockchain data, charts, token security information, AI processing, backend infrastructure, and subscription management.</p>
+<p>These providers operate independently and may experience delays, interruptions, outages, or errors.</p>
+<p>We are not responsible for the availability or accuracy of independent third-party services beyond our reasonable control.</p>
+</section>
+<section class="card"><h2>12. Acceptable Use</h2>
+<p>You agree not to:</p>
+<ul>
+<li>interfere with or disrupt the App or its services;</li>
+<li>attempt to bypass security or access controls;</li>
+<li>misuse APIs or infrastructure used by the App;</li>
+<li>attempt unauthorized access to systems or data;</li>
+<li>use the App for unlawful purposes;</li>
+<li>reverse engineer the App except where such restriction is prohibited by applicable law;</li>
+<li>abuse, overload, automate, or scrape the service in a way that interferes with normal operation.</li>
+</ul>
+</section>
+<section class="card"><h2>13. Intellectual Property</h2>
+<p>Smart Money Tracker, including its original design, software, branding, interface, and original content, is protected by applicable intellectual property laws.</p>
+<p>Third-party names, trademarks, market data, logos, and content remain the property of their respective owners.</p>
+<p>Nothing in these Terms grants ownership of third-party intellectual property.</p>
+</section>
+<section class="card"><h2>14. Availability</h2>
+<p>We aim to keep Smart Money Tracker available and functioning reliably, but uninterrupted availability cannot be guaranteed.</p>
+<p>The App or individual features may temporarily become unavailable because of maintenance, software updates, third-party service outages, blockchain or market data provider issues, network problems, security incidents, or circumstances outside our reasonable control.</p>
+</section>
+<section class="card"><h2>15. Changes to the App</h2>
+<p>We may update, modify, improve, suspend, or discontinue parts of Smart Money Tracker as the product evolves.</p>
+<p>Updates may be required to continue using some functionality.</p>
+</section>
+<section class="card"><h2>16. Disclaimer of Warranties</h2>
+<p>To the maximum extent permitted by applicable law, Smart Money Tracker is provided on an “as is” and “as available” basis.</p>
+<p>We do not guarantee that the App will always be uninterrupted or error-free, that market data will always be accurate or current, that AI-generated analysis will be correct, that market signals will predict future results, or that use of the App will result in financial gains.</p>
+<p>Nothing in these Terms limits rights that cannot legally be excluded under applicable consumer law.</p>
+</section>
+<section class="card"><h2>17. Limitation of Liability</h2>
+<p>To the maximum extent permitted by applicable law, Smart Money Tracker and its operators will not be responsible for losses resulting solely from reliance on market information, AI-generated analysis, market signals, or third-party data displayed through the App.</p>
+<p>You remain responsible for independently evaluating information before making financial or investment decisions.</p>
+<p>Nothing in these Terms excludes or limits liability where such exclusion or limitation is prohibited by applicable law.</p>
+</section>
+<section class="card"><h2>18. Privacy</h2>
+<p>Your use of Smart Money Tracker is also subject to the <a href="./privacy-policy.html">Smart Money Tracker Privacy Policy</a>.</p>
+<p>The Privacy Policy explains how information may be processed by the App and third-party service providers.</p>
+</section>
+<section class="card"><h2>19. Changes to These Terms</h2>
+<p>We may update these Terms as Smart Money Tracker evolves or applicable requirements change.</p>
+<p>The current version will be made available through the App or our website. The “Last updated” date will indicate the most recent revision.</p>
+</section>
+<section class="card"><h2>20. Contact</h2>
+<p>If you have questions about these Terms, contact:</p>
+<p><a href="mailto:support@smartmoneytracker.app"><strong>support@smartmoneytracker.app</strong></a></p>
+</section>
 
-  <h2>1. App Purpose</h2>
-  <p>
-    Smart Money Tracker provides crypto market signals, whale activity, token data,
-    AI analysis, and watchlist features for informational purposes only.
-  </p>
-
-  <h2>2. Not Financial Advice</h2>
-  <p>
-    Smart Money Tracker does not provide financial, investment, trading, legal, or tax advice.
-    All market signals, AI-generated insights, token information, and risk indicators are
-    provided for informational purposes only.
-  </p>
-  <p>
-    You are solely responsible for your own financial decisions. Crypto assets are highly risky
-    and may result in significant losses.
-  </p>
-
-  <h2>3. No Trading or Wallet Functionality</h2>
-  <p>
-    Smart Money Tracker does not provide crypto trading, exchange, brokerage, custody,
-    wallet, or payment services.
-  </p>
-  <p>
-    The app does not ask for seed phrases, private keys, or exchange login details.
-  </p>
-
-  <h2>4. Market Data and AI Insights</h2>
-  <p>
-    Market data, whale activity, token security signals, and AI-generated insights may be delayed,
-    incomplete, inaccurate, or unavailable.
-  </p>
-  <p>
-    We do not guarantee the accuracy, completeness, timeliness, or reliability of any information
-    shown in the app.
-  </p>
-
-  <h2>5. PRO Subscription</h2>
-  <p>
-    Smart Money Tracker may offer optional PRO features through an auto-renewable subscription
-    processed by the Apple App Store.
-  </p>
-  <p>
-    Payment will be charged to your Apple ID account. Subscriptions automatically renew unless
-    canceled according to Apple App Store rules.
-  </p>
-  <p>
-    You can manage or cancel your subscription in your Apple ID subscription settings.
-  </p>
-
-  <h2>6. Restore Purchases</h2>
-  <p>
-    If you purchased PRO features through the Apple App Store, you may use the Restore Purchases
-    option in the app to restore access on a supported device.
-  </p>
-
-  <h2>7. Third-Party Services</h2>
-  <p>
-    The app may use third-party services for market data, security checks, AI analysis,
-    backend functionality, and subscription management.
-  </p>
-  <p>
-    These services may include CoinGecko, DexScreener, GeckoTerminal, GoPlus, OpenAI,
-    Supabase, Apple App Store / StoreKit, and Adapty if used for subscription management.
-  </p>
-
-  <h2>8. User Responsibility</h2>
-  <p>
-    You agree to use the app responsibly and not rely on it as the only source for financial
-    or trading decisions.
-  </p>
-
-  <h2>9. Changes to the App</h2>
-  <p>
-    We may update, modify, suspend, or discontinue any part of the app at any time.
-  </p>
-
-  <h2>10. Changes to These Terms</h2>
-  <p>
-    We may update these Terms from time to time. Updates will be posted on this page with a new
-    “Last updated” date.
-  </p>
-
-  <h2>11. Contact</h2>
-  <p>
-    If you have questions about these Terms, contact us at:
-    <br />
-    <strong>support@smartmoneytracker.app</strong>
-  </p>
+    <footer class="footer">
+      <div>© 2026 Smart Money Tracker</div>
+      <div class="footer-links">
+        <a href="./privacy-policy.html">Privacy Policy</a>
+        <a href="mailto:support@smartmoneytracker.app">Support</a>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
